@@ -1,0 +1,68 @@
+/*
+# Copyright 2022 Carla de León Morán, Laura Díaz Peña, Francisco Manuel Melgarejo Meseguer y Ana María de Pablo Hermida
+# SPDX-License-Identifier: GPL-3.0
+
+# Copyright (C) 2015 Mohamed Moustafa
+# SPDX-License-Identifier: MIT
+*/
+
+html,body{
+	margin:0;
+	padding:0;
+	min-height: 100%;
+	background-color: #f6effdff;
+
+	}
+#chalkboard{
+	position:absolute;
+	top:0;
+	left:0;
+
+	z-index:1;
+	cursor:none;
+	overflow: hidden;
+	background-color: #000000;
+	}
+.chalk{
+	width:40px;
+	height:50px;
+	position:absolute;
+	padding:0;
+	margin:0;
+	bottom:0;
+	left:0;
+	cursor:none;
+	z-index:2;
+	}
+.eraser{
+	width: 50px;
+	height: 100px;
+	margin-top: -50px;
+	margin-left: -25px;
+	background: #999;
+	border-radius: 5px;
+
+}
+.panel{
+	display: block;
+	font-size: 18px;
+
+	font-family: sans-serif;
+	position:absolute;
+	margin:1em;
+	bottom:0;
+	left:0;
+	z-index:5;
+}
+.panel a{
+	display: inline-block;
+	padding: 0.5em 1em;
+
+	text-decoration: none;
+	cursor: pointer;
+	opacity: 0.8;
+	margin-right: 0.5em;
+}
+.panel a:hover{
+	opacity: 0;
+}
